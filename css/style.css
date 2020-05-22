@@ -1,0 +1,518 @@
+/* Link font */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 42px;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h3 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 21px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 25px;
+    
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+.fa {
+    margin-right: 10px;
+}
+
+/* Header */
+
+/* .nav-item {
+    background: rgb(39, 14, 39);
+    height: 65px;
+    width: 100%;
+    top: 0;
+}
+
+.header-left {
+    float: left;
+    padding: 20px 40px;
+}
+
+.header-left h2 {
+    color: #ffffff;
+}
+  
+.header-right li {
+    float: right;
+    padding: 25px 20px;
+}
+
+.header-right a {
+    color: #ffffff;
+} */
+
+.navbar {
+    background:  rgb(39, 14, 39);
+}
+.navbar h1 {
+    color: #ffffff;
+}
+
+.navbar a {
+    color: #ffffff !important;
+}
+
+#navbarNavDropdown li {
+    float: right;
+}
+
+.dropdown {
+    background: rgb(39, 14, 39);
+}
+
+.navbar button {
+    color: #ffffff;
+}
+
+/* Profil Pribadi */
+
+.profil-heading h3 {
+    text-align: center !important;
+    display: block;
+    margin-top: 30px;
+}
+
+.profil-img img{
+    width: 200px;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.profil-items {
+    margin: auto;
+    width: 90%;
+}
+table {
+    width: 80%;
+    display: flex;
+    margin-left: 25%;
+    padding: 0px 15px 20px 15px;
+    display: flex;
+}
+
+.td {
+    padding-top: 5vh;
+    padding-bottom: 8px;
+    padding-right: 15px;
+    border-bottom: rgb(133, 46, 133);
+    background: yellow;
+}
+
+#profile table td {
+    padding-top: 5vh;
+    padding-bottom: 8px;
+    padding-right: 15px;
+    border-bottom: rgb(133, 46, 133) Solid 2px;
+}
+
+#profile img {
+    width: 250px;
+}
+
+#profile .bio_profile{
+    margin-left: 10px;
+}
+
+
+/* Riwayat Pendidikan */
+
+.educational .container {
+    padding: 20px 10px;
+}
+
+.educational-details img {
+    width: 100%;
+    margin: auto;
+}
+
+.educational-details {
+    display: flex;
+}
+.educational-details ul {
+    border-left: 4px solid #ffff00;
+    border-radius: .8rem;
+    background-color:#ffffff;
+    margin: 0 auto;
+    position: relative;
+    padding: 5rem;
+    text-align: left;
+    width: 70%;
+}
+
+.educational-details h4 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: rgb(39, 14, 39);
+}
+
+.educational-details .date {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+.educational-details .date:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.educational-details .date::before, 
+.educational-details .date::after {
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.educational-details .date::before {
+    content: attr(data-date);
+    left: -18rem;
+    text-align: right;
+    min-width: 12rem;
+    font-size: 1.3rem;
+}
+
+.educational-details .date::after {
+    content: '';
+    box-shadow: 0 0 0 4px rgb(39, 14, 39);;
+    border-radius: 100%;
+    left: -5.37rem;
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: rgb(39, 14, 39);;
+}
+
+/* Riwayat Pelatihan */
+
+.card {
+    margin-top: 20px;
+}
+.sub-exp {
+    border-left: 4px solid #ffff00;
+}
+
+.sub-exp h5 {
+    padding-left: 10px;
+}
+
+.exp-text p {
+    padding-left: 15px;
+}
+.experiences-details ul {
+    border-left: 4px solid#ffff00;
+    border-radius: .8rem;
+    background-color: #ffffff;
+    margin: 0 auto;
+    position: relative;
+    padding: 5rem;
+    text-align: left;
+    width: 70%;
+    margin-left: 15%;
+}
+.experiences-details li {
+    font-size: 20px;
+    display: flex;
+}
+
+.experiences-details .experience {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+.experiences-details .experience:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.experiences-details .experience::before, 
+.experiences-details .experience::after {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.experiences-details .experience::before {
+    content: attr(data-date);
+    left: -15rem;
+    text-align: right;
+    min-width: 12rem;
+    font-size: 1.5rem;
+}
+
+.experiences-details .experience::after {
+    content: '';
+    box-shadow: 0 0 0 4px rgb(39, 14, 39);
+    border-radius: 100%;
+    left: -5.27rem;
+    height: 0.3rem;
+    width: 0.3rem;
+    background-color: rgb(39, 14, 39);
+}
+
+/* .experiences .container {
+    background: rgb(39, 14, 39);
+} */
+
+.experiences .experience {
+    display: block;
+}
+
+/* Deskripsi Diri */
+.description .desc-item{
+    align-items: center;
+    justify-content: center;
+}
+
+.desc-img {
+    margin: auto;
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+
+.desc-item {
+    display: block;
+}
+.desc-img {
+    display: block;
+}
+.desc-item img {
+    width: 200px;
+    margin: auto;
+    border-radius: .8rem;
+    display: block;
+}
+
+.text-description {
+    margin-left: 30%;
+}
+
+.desc-item {
+    margin: auto;
+    border-left: 4px solid #ffff00;
+    padding: 20px;
+    width: 80%;
+    border-radius: .8rem;
+}
+
+.desc-heading h3 {
+    color: #ffffff;
+}
+
+.description {
+    background: rgb(39, 14, 39);
+    margin-top: 30px;
+}
+
+.description .container {
+    padding: 20px;
+}
+
+.desc-item p {
+    color: #ffffff;
+    display: block;
+    font-family: 'Karla', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+}
+
+.greeting {
+    font-size: 50px;
+}
+
+/* SKILL */
+
+.skill {
+    margin-top: 40px;
+}
+.bar-chart {
+    position: relative;
+    width: 100%;
+    margin-top:30px;
+    padding-bottom: 1px;
+    margin-bottom: 30px;
+}
+
+.bar-chart > .legend {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    margin-bottom: -45px;
+    border-top: 1px solid #000;
+}
+
+.bar-chart > .legend > .label {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.bar-chart > .legend > .label:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 1px;
+    height: 8px;
+    background-color: #000;
+    margin-top: -8px;
+}
+
+.bar-chart > .legend > .label.last:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: auto;
+    content: '';
+    width: 1px;
+    height: 8px;
+    background-color: #000;
+    margin-top: -8px;
+}
+.bar-chart > .legend > .label h4 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.bar-chart > .chart {
+    position: relative;
+    width: 100%;
+}
+
+.bar-chart > .chart > .item {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    color: #a0a01b;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.bar-chart > .chart > .item > .bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(228, 224, 224);
+    z-index: 5;
+}
+
+.bar-chart > .chart > .item > .bar > .persen {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 40px;
+    line-height: 40px;
+    padding-right: 12px;
+    z-index: 15;
+}
+
+.bar-chart > .chart > .item > .bar > .progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgb(39, 14, 39);
+    z-index: 10;
+}
+
+.bar-chart > .chart > .item > .bar > .progress > .title {
+    display: block;
+    position: absolute;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 12px;
+    letter-spacing: 2px;
+    z-index: 15;
+}
+
+/* footer */
+footer {
+    background: rgb(39, 14, 39);
+    width: 100%;
+    height: 50px;
+}
+
+ .footer-text p{
+    color: #ffffff;
+    font-size: 15px;
+    margin: auto;
+    padding: 10px 0;
+    text-align: center;
+}
