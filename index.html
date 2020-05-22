@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- stylesheet css -->
+     <link rel="stylesheet" href="./css/style.css">
+
+      <!-- CDN Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+     <!-- Font Awesome -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+    <!-- CDN Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <!-- for icon -->
+    <script src="https://kit.fontawesome.com/54218bd639.js" crossorigin="anonymous"></script>
+
+    <!-- Link Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- For Barchart -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            barChart();
+
+            $(window).resize(function(){
+            barChart();
+            });
+
+            function barChart(){
+                $('.bar-chart').find('.progress').each  (function(){
+                    var itemProgress = $(this),
+                    itemProgressWidth = $(this).parent().width() * ($(this).data('persen') / 100);
+                    itemProgress.css('width', itemProgressWidth);
+                });
+            }
+        });
+    </script>
+
+    <title>Nurhikmah</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Resume</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ml-2" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#profill">Biodata</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#educationn">Riwayat pendidikan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pengalaman">Riwayat Pekatihan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#deskripsi">Deskripsi diri</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#kemampuan">Skill</a>
+                </li>
+              </ul>
+            </div>
+            </div>
+          </nav>
+    </header>
+
+    <!-- Profil Pribadi -->
+    <main>
+        <section class="profil" id="profill">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container"> 
+                    <div id="profile">
+                        <div class="container">
+                               <div class="profil-img">
+                                   <img src="image/profil1.jpg" alt="Nurhikmah">
+                                </div>
+                                <div class="profil-heading">
+                                    <h3><i class="fa fa-user-tie" style="color: rgb(39, 14, 39);"></i> Biodata</h3>
+                                </div>
+                                    <div class="bio_profile">
+                                        <table>
+                                            <tr>
+                                                <td><h4>Nama</h4></td>
+                                                <td>Nurhikmah</td>
+                                            </tr>
+                                            <tr>
+                                                <td><h4>Jenis Kelamin</h4></td>
+                                                <td>Perempuan</td>
+                                            </tr>
+                                            <tr>
+                                                <td><h4>Agama</h4></td>
+                                                <td>Islam</td>
+                                            </tr>
+                                            <tr>
+                                                <td><h4>TTL</h4></td>
+                                                <td>Maroanging, 15 oktober 2000</td>
+                                            </tr>
+                                            <tr>
+                                                <td><h4>Alamat</h4></td>
+                                                <td>Kec. Pammana, Kab. Wajo, Provinsi Sulawesi selatan</td>
+                                            </tr>
+                                            <tr>
+                                                <td><h4>Hobi</h4></td>
+                                                <td>Menyanyi, main bulu tangkis</td>
+                                            </tr>
+                                            <tr>
+                                                <td><h4>No. Telepon</h4></td>
+                                                <td> 085255454710</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+              </div>
+            
+        </section>
+        
+        <!-- Riwayat Pendidikan -->
+        <section class="educational" id="educationn">
+            <div class="container">
+                <div class="educational-heading">
+                    <h3><i class="fa fa-school" style="color: rgb(39, 14, 39);"></i>Riwayat Pendidikan</h3>
+                </div>
+                <div class="educational-details">
+                    <ul>
+                        <li class="date" data-date="2008 - 2013">
+                            
+                            <div class="row edu-text">
+                                <div class="col-md-3">
+                                    <img src="./image/sd.png" alt="" class="education-image">
+                                </div>
+                                <div class="col-md-9">
+                                    <h4>Sekolah Dasar</h4>
+                                    <p>
+                                        saya memulai pendidikan sekolah dasar setelah menempuh pendidikan dari TK. saya mulai pendidikan sekolah dasar pada tahun 2008 dan lulus pada tahun 2013. selama pendidikan sekolah dasar saya pernah mengikuti lomba olahraga yaitu tennis meja.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="date" data-date="2013 - 2016">
+                            <div class="row edu-text">
+                                <div class="col-md-3">
+                                    <img src="./image/smp.png" alt="" class="education-image">
+                                </div>
+                                <div class="col-md-9">
+                                    <h4>Sekolah Menengah Pertama</h4>
+                                    <p>
+                                        setelah saya menyelesaikan pendidikan sekolah dasar, saya melanjutkan pendidikan sekolah di MTS Nurul Ulum AS’ADIYAH Maroanging, melanjutkan pendidikan pada tahun 2013 dan lulus pada tahun 2016. selama saya sekolah saya pernah mengikuti beberapa kegitan salah satu kegiatan yang saya ikuti yaitu lomba kasidah.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="date" data-date="2016 - 2019">
+                            <div class="row edu-text">
+                                <div class="col-md-3">
+                                    <img src="./image/sma.jpg" alt="" class="education-image">
+                                </div>
+                                <div class="col-md-9">
+                                    <h4>Sekolah Menengah Atas</h4>
+                                    <p>
+                                        saya melanjutkan pendidikan setelah lulus, saya melanjutkan pendidikan di SMAN 9 Wajo, selama saya sekolah saya penah mengikuti beberapa kegiatan organisasi mulai dari pramuka, PMR, Pik remaja.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Riwayat Pelatihan -->
+        <section class="experiences" id="pengalaman">
+            <div class="container">
+                <div class="experiences-heading">
+                    <h3><i class="fa fa-fist-raised" style="color: rgb(39, 14, 39);"></i> Riwayat Pelatihan</h3>
+                </div>
+                <div class="row wrapper-exp">
+                    <div class="col-sm-6 experience">
+                      <div class="card border-0">
+                        <div class="card-body exp-text">
+                            <div class="sub-exp">
+                                <h5 class="card-title">Panitia dalam Kegiatan Organisasi sekolah</h5>
+                            </div>
+                          <p>Sebagai sekretaris latihan pengembangan kepemimpinan di sekolah periode 2018/2019. Untuk menanamkan dan mengembangkan jiwa kepemimpinan bagi generasi muda.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 experience">
+                      <div class="card border-0">
+                        <div class="card-body exp-text">
+                            <div class="sub-exp">
+                                <h5 class="card-title">Mengikuti pelatihan Anti Narkoba</h5>
+                            </div>
+                          <p>Pelatihan Narkoba yang diadakan komunitas BNN yang diadakan di Kota Makassar. Untuk mengedukasi pelajar Indonesia agar terbebas dari obat-obatan terlarang.</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Deskripsi Diri -->
+        <section class="description" id="deskripsi">
+            <div class="container">
+                <div class="desc-heading">
+                    <h3><i class="fa fa-user"></i>Deskripsi diri</h3>
+                </div>
+                <div class="desc-item">
+                    <div class="desc-img">
+                        <img src="./image/desc1.jpg" alt="Nurhikmah">
+                    </div>
+                    <p class="desc-text"><span class="greeting">Hi!</span> Nama saya Nurhikmah biasa dipanggil Imma, lahir di Maroanging, 15 oktober 2000, saya merupakan anak pertama dari 3 bersaudara. Saya merupakan seorang yang kurang peduli pada lingkungan sekitar lebih tepatnya cuek namun saya termasuk individu yang yang peduli terhadap sesama. Saya sangat suka hal – hal yang berbau seni, misalnya menyanyi, dance, tari, dan acting. Saya juga suka memasak.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILL -->
+        <section class="skill" id="kemampuan">
+            <div class="container">
+                <h3><i class="fa fa-chess-knight "style="color: rgb(39, 14, 39);"></i> My Skill</h3>
+                <div class="bar-chart">
+            
+                    <!-- bar -->
+                    <div class="chart clearfix">
+                        <div class="item">
+                            <div class="bar">
+                                <span class="persen">80%</span>
+            
+                                <div class="progress" data-persen="80">
+                                    <span class="title">Menyanyi</span>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="item">
+                            <div class="bar">
+                                <span class="persen">90%</span>
+            
+                                <div class="progress" data-persen="90">
+                                    <span class="title">Dance/Tari</span>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="item">
+                            <div class="bar">
+                                <span class="persen">77%</span>
+            
+                                <div class="progress" data-persen="77">
+                                    <span class="title">Acting</span>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="item">
+                            <div class="bar">
+                                <span class="persen">92%</span>
+            
+                                <div class="progress" data-persen="92">
+                                    <span class="title">Memasak</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-text col-12">
+            <p>&copy; Nurhikmah</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
